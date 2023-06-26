@@ -2,6 +2,6 @@
 
 
 <p align="center">
-   <img alt="Diagrama de Classes" src=".github/pic_1.png" 
+   <img alt="Diagrama de Classes" src=".github/Diagrama_Classes_Atividade.png" 
   width="80%">
 </p>
