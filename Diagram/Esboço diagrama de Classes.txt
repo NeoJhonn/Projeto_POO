@@ -1,0 +1,170 @@
+Pessoa
+---------------------
+- nome: String
+- sexo: char
+- telefone: String
+- dataNascimento: Date
+- cpf: int
+- rg: String
+- Status: boolean
+- criadoem: TimeStamp
+- alteradopor: String
+- alteradoem: TimeStamp
+- alteradopor: String
+---------------------
++ Pessoa()
++ getters(): type
++ setters(): void
+
+
+Funcionario
+---------------------
+- estadoCivil: []String
+- escolaridade: String
+- cargo: []String
+- numeroCarteiraTrabalho: char
+- dataAdmissao: Date
+- dataDemissao: Date
+- disponibilidade: char
+--------------------
++ Funcionario()
+
+
+
+Cliente
+---------------------
+- endereco: String
+- observacao: String
+----------------------
++ Cliente()
+
+
+Mesa
+---------------------
+- funcionario: Funcionario
+- nome: String
+- listaClientes: List<Cliente>
+- quantidadeMaximaPessoas: byte
+- codigo: String
+- numero: int
+- statusMesa: []String
+- quantidadeMaximaPessoas
+- criadoem: TimeStamp
+- alteradopor: String
+- alteradoem: TimeStamp
+- alteradopor: String
+----------------------
++ Mesa()
++ alocar(): void
++ reservar(): void
++ liberar(): void
++ listarClientes(): void
+
+
+Comanda
+----------------------
+- mesa: Mesa
+- cliente: Cliente
+- listaItemsComanda: List<itemComanda>
+- statusComanda: []String 
+- codigo: String
+- valorTotal: float
+- criadoem: TimeStamp
+- alteradopor: String
+- alteradoem: TimeStamp
+- alteradopor: String
+-----------------------
++ Comanda()
++ adicionarProduto(): void
++ fecharComanda(): void
++ pagarComanda(): void
++ listarComandasPorStatus(): void
+
+
+Produto
+------------------------
+- nome: string
+- descricao: String
+- codigo: String
+- precoCusto: float
+- precoVenda: float
+- statusPreparo: []String
+- tempoPreparo: TimeStamp
+- observacoes: String
+- status: boolean
+- criadoem: TimeStamp
+- alteradopor: String
+- alteradoem: TimeStamp
+- alteradopor: String
+-------------------------
++ Produto()
++ getters(): type
++ seters(): void
+
+
+Cardapio
+--------------------------
+- nome: String
+- listaProdutosCardapio: List<Produto>
+- codigo: String
+- status: boolean
+- criadoem: TimeStamp
+- alteradopor: String
+- alteradoem: TimeStamp
+- alteradopor: String
+--------------------------
++ Cardapio()
++ incluirProdutoNoCardapio(): void 
++ excluirProdutoDoCardapio(): void
+
+
+ItemComanda
+---------------------------
+- produto: Produto
+- quantidadeProduto: int
+- criadoem: TimeStamp
+- alteradopor: String
+- alteradoem: TimeStamp
+- alteradopor: String
+---------------------------
++ ItemComanda()
+
+
+ComandaProduto
+-----------------------
+- comanda: Comanda
+- status: []String
+- quantidadeProduto: int
+- valorTotal: float
+- criadoem: TimeStamp
+- alteradopor: String
+- alteradoem: TimeStamp
+- alteradopor: String
+------------------------
+ComandaProduto()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
